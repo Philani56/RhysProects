@@ -1,0 +1,1361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - RHYS PROECTS (PTY) LTD</title>
+    <link rel="icon" href="assets/Logo.png" type="image/x-icon">
+    <!-- Google Font: Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <style>
+
+        html{
+            scroll-behavior:smooth;
+        }
+
+
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* Header Section */
+        .header {
+            height: 100vh;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            overflow: hidden;
+            animation: slideBackground 15s infinite; /* 15-second infinite animation */
+            padding-top: 80px; /* Add padding to the top to create space below the navbar */
+        }
+
+        /* Background Image Slideshow */
+        @keyframes slideBackground {
+            0.3% {
+                background-image: url('assets/50.jpg'); /* First image */
+            }
+            100% {
+                background-image: url('assets/53.jpg'); /* Second image */
+            }
+            100% {
+                background-image: url('assets/60.jpg'); /* Third image */
+            }
+            100% {
+                background-image: url('assets/60.jpg'); /* Loop back to the first image */
+            }
+        }
+
+        /* Overlay for Text Readability */
+        .header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4); /* Dark overlay for text readability */
+            z-index: 1;
+        }
+
+        /* Container within Header */
+        .header .container {
+            position: relative;
+            z-index: 2;
+            max-width: 90%; /* Adjusted for better alignment */
+            padding: 0 20px;
+            margin: 0 auto; /* Center align the container */
+            text-align: center; /* Ensure text is centered */
+        }
+
+        /* Heading Styling */
+        .header h1 {
+            font-size: 4rem; /* 64px */
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+            display: block; /* Ensure h1 takes full width for alignment */
+        }
+
+        /* Paragraph Styling */
+        .header p {
+            font-size: 1.25rem; /* 20px */
+            margin: 0 auto 20px; /* Center align and add margin-bottom */
+            max-width: 800px; /* Max width to ensure it doesn’t stretch too wide */
+            line-height: 1.6;
+            font-weight: 300;
+            text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Call-to-Action Button */
+        .header .cta-button {
+            display: inline-flex; /* Use inline-flex to align items */
+            align-items: center;  /* Center items vertically */
+            background-color: gold;
+            color: black;
+            padding: 15px 30px;
+            font-size: 1.125rem; /* 18px */
+            text-decoration: none;
+            border-radius: 0; /* Remove the border-radius for square corners */
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            font-weight: bold; /* Make the text bold */
+        }
+
+        .header .cta-button i {
+            margin-right: 10px; /* Add space between icon and text */
+            font-size: 1.2rem; /* Adjust icon size if needed */
+        }
+
+        /* Hover Effect for Button */
+        .header .cta-button:hover {
+            background-color: white;
+            color: black;
+            transform: scale(1.05);
+        }
+
+        /* Navigation Bar */
+        nav {
+            background: 
+                linear-gradient(to right, rgba(247, 247, 247, 0.8), rgba(255, 255, 255, 0.8)),
+                url('./assets/2.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 20px 5%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            z-index: 100;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+        }
+
+        /* Logo Area */
+        .logo img {
+            height: 150px; /* Increased logo size */
+            width: auto;
+        }
+
+         /* About Us Section */
+         .about-us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 10%; /* Increased padding for a larger section */
+    background: url('assets/8.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+
+        .about-us::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            
+            z-index: 1;
+        }
+
+        .about-us .container {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1400px; /* Increased max-width for a larger section */
+            width: 100%;
+            padding: 30px; /* Added more padding for better spacing */
+            border-radius: 15px; /* Increased border-radius for a softer look */
+            
+            background: rgba(255, 255, 255, 0); /* Remove background for the content area */
+        }
+
+        .about-us .container .image {
+            flex: 1;
+            max-width: 45%; /* Adjusted for better proportion */
+            margin-right: 30px; /* Increased margin for spacing */
+        }
+
+        .about-us .container .image img {
+            width: 100%;
+            height: auto;
+            
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .about-us .container .text {
+            flex: 1;
+            max-width: 47%;
+        }
+
+        .about-us .text h1 {
+    font-size: 1.5rem; /* Adjust size as needed */
+    margin-bottom: 20px; /* Space between heading and paragraph */
+    position: relative;
+    display: inline-block;
+}
+
+.about-us .text h1::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px; /* Thickness of the underline */
+    background: linear-gradient(to right, gold, white); /* Gradient effect */
+    position: absolute;
+    bottom: -5px; /* Space between text and underline */
+    left: 0;
+}
+
+
+        .about-us .container p {
+            font-size: 1.1rem; /* Increased font size */
+            color: black;
+            margin-bottom: 30px;
+            line-height: 1.8; /* Increased line-height for better readability */
+        }
+
+        .about-us .container .cta-button {
+    display: inline-block;
+    background-color: gold;
+    color: black;
+    padding: 10px 20px; /* Reduced padding */
+    font-size: 1rem; /* Smaller font size */
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+        .about-us .container .cta-button:hover {
+            background-color: white;
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .about-us .container {
+                flex-direction: column;
+                text-align: center;
+                padding: 40px 20px; /* Adjusted padding for smaller screens */
+            }
+
+            .about-us .container .image {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+
+            .about-us .container .text {
+                max-width: 100%;
+            }
+
+            .about-us .container h1 {
+                font-size: 2.5rem; /* Adjusted font size */
+                
+            }
+
+            .about-us .container p {
+                font-size: 1.125rem; /* Adjusted font size */
+                font-weight: bold;
+            }
+
+            .about-us .container .cta-button {
+                padding: 12px 30px; /* Adjusted padding */
+                font-size: 1rem; /* Adjusted font size */
+            }
+        }
+
+    /* Vision Section */
+.vision {
+    background-color: black;
+    color: white;
+    padding: 100px 10%; /* Increased padding for a larger section */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    flex-direction: row; /* Default layout for larger screens */
+}
+
+.vision .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.vision .text {
+    max-width: 60%;
+    text-align: left; /* Align text to the left by default */
+}
+
+.vision h1 {
+    font-size: 2rem; /* Adjusted size for prominence */
+    margin-bottom: 20px;
+    position: relative;
+    text-align: left; /* Align text to the left by default */
+}
+
+.vision h1::after {
+    content: "";
+    display: block;
+    width: 60px; /* Increased width of the underline */
+    height: 4px; /* Thickness of the underline */
+    background: gold; /* Underline color */
+    position: absolute;
+    bottom: -15px; /* Space between text and underline */
+    left: 0;
+}
+
+.vision p {
+    font-size: 1rem; /* Reduced size for the paragraph */
+    line-height: 1.6;
+}
+
+.vision .icon {
+    font-size: 5rem; /* Adjusted size of the icon */
+    color: gold; /* Icon color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px; /* Margin for spacing above icon */
+}
+
+/* Mission Section */
+.mission {
+    background-color: black;
+    color: white;
+    padding: 100px 10%; /* Increased padding for a larger section */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    flex-direction: row; /* Default layout for larger screens */
+}
+
+.mission .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.mission .text {
+    max-width: 60%;
+    text-align: left; /* Align text to the left by default */
+}
+
+.mission h1 {
+    font-size: 2rem; /* Adjusted size for prominence */
+    margin-bottom: 20px;
+    position: relative;
+    text-align: left; /* Align text to the left by default */
+}
+
+.mission h1::after {
+    content: "";
+    display: block;
+    width: 60px; /* Increased width of the underline */
+    height: 4px; /* Thickness of the underline */
+    background: gold; /* Underline color */
+    position: absolute;
+    bottom: -15px; /* Space between text and underline */
+    left: 0;
+}
+
+.mission p {
+    font-size: 1rem; /* Reduced size for the paragraph */
+    line-height: 1.6;
+}
+
+.mission .icon {
+    font-size: 6rem; /* Adjusted size of the icon */
+    color: gold; /* Icon color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px; /* Margin for spacing above icon */
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .vision, .mission {
+        padding: 80px 5%; /* Adjust padding for medium screens */
+    }
+
+    .vision .text, .mission .text {
+        max-width: 100%; /* Full width for text blocks on medium screens */
+    }
+
+    .vision .icon, .mission .icon {
+        font-size: 4rem; /* Adjusted icon size for medium screens */
+    }
+
+    .vision h1, .mission h1 {
+        font-size: 1.75rem; /* Adjusted heading size for medium screens */
+    }
+
+    .vision p, .mission p {
+        font-size: 0.9rem; /* Adjusted paragraph size for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .vision, .mission {
+        padding: 60px 5%; /* Adjust padding for small screens */
+        flex-direction: column; /* Stack items vertically on small screens */
+        text-align: center; /* Center text on small screens */
+    }
+
+    .vision .text, .mission .text {
+        max-width: 100%; /* Full width for text blocks on small screens */
+        margin-bottom: 20px; /* Margin for spacing between text and icon */
+    }
+
+    .vision .icon, .mission .icon {
+        font-size: 3rem; /* Adjusted icon size for small screens */
+        margin-top: 20px; /* Margin for spacing above icon */
+    }
+
+    .vision h1, .mission h1 {
+        font-size: 1.5rem; /* Adjusted heading size for small screens */
+    }
+
+    .vision p, .mission p {
+        font-size: 0.8rem; /* Adjusted paragraph size for small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .vision, .mission {
+        padding: 40px 2%; /* Adjust padding for extra small screens */
+    }
+
+    .vision .icon, .mission .icon {
+        font-size: 2.5rem; /* Further reduced icon size for extra small screens */
+    }
+
+    .vision h1, .mission h1 {
+        font-size: 1.25rem; /* Further reduced heading size for extra small screens */
+    }
+
+    .vision p, .mission p {
+        font-size: 0.75rem; /* Further reduced paragraph size for extra small screens */
+    }
+}
+
+/* Our Services Section */
+.our-services {
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), 
+                url('assets/ser2.jpg') no-repeat center center;
+    background-size: cover; /* Ensures the image covers the entire section */
+    padding: 100px 5%; /* Adjusted padding for a larger section */
+    color: black;
+    position: relative;
+    overflow: hidden;
+    text-align: center; /* Center-align text for a cleaner look */
+}
+
+
+
+.our-services h1 {
+    font-size: 2rem; /* Increased font size for prominence */
+    margin-bottom: 40px;
+    color: black;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.our-services h1::after {
+    content: "";
+    display: block;
+    width: 80px; /* Width of the underline */
+    height: 4px; /* Thickness of the underline */
+    background: black; /* Underline color */
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.service-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Gap between items */
+}
+
+.service-item {
+    width: 30%;
+    position: relative;
+    text-align: center;
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Ensure content stays within the container */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Ensuring all images have the same size */
+.service-item img {
+    width: 100%;
+    height: 200px; /* Fixed height for uniform image size */
+    object-fit: cover; /* Ensures the images maintain their aspect ratio while covering the area */
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover img {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.service-info {
+    padding: 20px;
+    color: black;
+}
+
+.service-item h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.service-item h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: black;
+    margin: 10px auto; /* Center underline */
+}
+
+.service-item p {
+    font-size: 0.875rem; /* Smaller font size for the paragraph */
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: gold;
+    color: black;
+    padding: 10px 20px;
+    font-size: 0.875rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .service-item {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .service-item {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+
+/* Our Macro Market Section */
+.macro-market {
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), 
+                url('assets/ser2.jpg') no-repeat center center;
+    background-size: cover; /* Ensures the image covers the entire section */
+    padding: 100px 5%; /* Padding for the section */
+    color: black;
+    text-align: center; /* Center-align the text */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items */
+}
+
+.macro-market .text {
+    max-width: 70%; /* Restrict text width for readability */
+    margin-bottom: 40px;
+}
+
+.macro-market h1 {
+    font-size: 2rem; /* Adjusted font size */
+    margin-bottom: 40px;
+    color: black;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.macro-market h1::after {
+    content: "";
+    display: block;
+    width: 80px; /* Underline width */
+    height: 4px; /* Thickness of the underline */
+    background: gold; /* Yellow underline */
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%); /* Center the underline */
+}
+
+.macro-market .bullet-list {
+    list-style: none;
+    padding-left: 0;
+    font-size: 1.125rem; /* Font size for the bullets */
+    line-height: 1.8;
+    margin: 0 auto; /* Center the list */
+    display: inline-block; /* Align bullets to the center */
+    text-align: left; /* Ensure text aligns left while bullets stay centered */
+}
+
+.macro-market .bullet-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; /* Space between each bullet point */
+}
+
+.macro-market .bullet-list li::before {
+    content: counter(list-item) ".";
+    counter-increment: list-item;
+    background-color: gold;
+    color: black;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-right: 15px;
+    border-radius: 4px; /* Small rounded corners for the yellow square */
+}
+
+.macro-market img {
+    width: 50%; /* Adjust image width */
+    height: auto;
+    display: block;
+    margin: 40px auto 0; /* Center the image with space above */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for a more professional look */
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .macro-market .text {
+        max-width: 80%; /* Adjust text width for tablet screens */
+    }
+
+    .macro-market img {
+        width: 70%; /* Adjust image size for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .macro-market .text {
+        max-width: 100%; /* Full width text on small devices */
+    }
+
+    .macro-market img {
+        width: 90%; /* Larger image on mobile for visibility */
+    }
+}
+
+
+/* Contact Us Section */
+
+/* Footer Section */
+.footer {
+    background-color: black;
+    color: white;
+    padding: 50px 5%;
+    display: flex;
+    justify-content: flex-start; /* Align items to the start */
+    align-items: flex-start; /* Align items to the top */
+    text-align: left; /* Align text to the left */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Logo Section */
+.footer .logo {
+    width: 20%; /* Adjust logo section width */
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.footer .logo img {
+    width: 220px;
+    height: auto;
+    display: block;
+    margin-bottom: 0;
+}
+
+/* Contact Us Section */
+.footer .contact-us1 {
+    width: 30%; /* Adjust width */
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0;
+    margin-left: 5%; /* Align the contact details to the logo */
+}
+
+.footer .contact-us1 h2 {
+    color: gold;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.footer .contact-us1 .contact-item1 {
+    display: flex;
+    align-items: center;
+}
+
+.footer .contact-us1 .contact-item1 i {
+    margin-right: 10px;
+    color: gold;
+    font-size: 1.2rem;
+}
+
+.footer .contact-us1 p {
+    margin: 0;
+    font-size: 0.875rem;
+    line-height: 1.6;
+}
+
+/* Contact Form Section */
+.contact-form1 {
+    width: 30%; /* Adjusted width for a better fit */
+    margin-left: 5%; /* Space between form and contact details */
+}
+
+.contact-form1 .form-group {
+    margin-bottom: 15px; /* Adjusted margin for better spacing */
+}
+
+.contact-form1 label {
+    display: block;
+    font-size: 0.875rem; /* Slightly larger font size for readability */
+    color: white;
+    margin-bottom: 5px;
+}
+
+.contact-form1 input, .contact-form1 textarea {
+    width: 100%;
+    padding: 10px; /* Slightly increased padding for a better feel */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+    font-size: 0.875rem; /* Maintain readability */
+    outline: none;
+}
+
+.contact-form1 input::placeholder, .contact-form1 textarea::placeholder {
+    color: #bbb;
+}
+
+.contact-form1 button {
+    padding: 10px 20px; /* Adjusted padding for button */
+    background-color: gold; /* Yellow button */
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.875rem; /* Maintain readability */
+}
+
+.contact-form1 button:hover {
+    background-color: darkgoldenrod; /* Darker yellow on hover */
+}
+
+/* Social Media Icons */
+.footer .social-icons {
+    width: 20%; /* Adjust width */
+    text-align: left;
+    margin-top: 30px;
+}
+
+.footer .social-icons a {
+    color: white;
+    margin-right: 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+    color: gold;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer .logo, 
+    .footer .contact-us1, 
+    .footer .contact-form1, 
+    .footer .social-icons {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer .contact-us,
+    .footer .contact-form1,
+    .footer .social-icons {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-form1 {
+        width: 90%; /* Full width for smaller screens */
+        margin-left: 0; /* Remove left margin */
+    }
+
+    .contact-form1 .form-group {
+        margin-bottom: 12px; /* Adjusted margin for smaller devices */
+    }
+
+    .contact-form1 label {
+        font-size: 0.75rem; /* Smaller font size on very small devices */
+    }
+
+    .contact-form1 input, .contact-form textarea {
+        padding: 6px; /* Reduced padding on very small devices */
+        font-size: 0.75rem; /* Smaller font size */
+    }
+
+    .contact-form1 button {
+        padding: 8px 15px; /* Adjusted padding for smaller screens */
+        font-size: 0.75rem; /* Smaller font size */
+    }
+}
+
+
+
+        /* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    right: 20px; /* Position hamburger in the right corner */
+    top: 20px;   /* Align it vertically at the top */
+}
+
+.hamburger .bar {
+    width: 30px;
+    height: 3px;
+    background-color: #000; /* Dark black color */
+    margin: 5px 0;
+    transition: 0.3s;
+}
+/* Navbar Links */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    color: black; /* Text color changes to black */
+    text-decoration: underline; /* Adds an underline */
+    text-decoration-color: gold; /* Makes the underline gold */
+}
+
+/* Responsive Navbar */
+.nav-links {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end; /* Align nav links to the right */
+}
+
+.nav-links.active {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 15px 10%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo img {
+        height: 100px; /* Adjust logo size for mobile */
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+        background: linear-gradient(180deg, #FFD700, #FFFFFF); /* Gradient background for navbar */
+        position: absolute;
+        top: 60px;
+        right: 0; /* Align the dropdown nav links to the right */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+        align-items: flex-end; /* Align the links to the right */
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .logo img {
+        height: 150px; /* Adjust logo size for mobile */
+    }
+
+    .header h1 {
+        font-size: 3rem;
+    }
+
+    .header p {
+        font-size: 1rem;
+        max-width: 90%;
+    }
+
+    .header .cta-button {
+        padding: 12px 24px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        height: 80px; /* Adjust logo size further for smaller screens */
+    }
+
+    .header h1 {
+        font-size: 2.5rem;
+    }
+
+    .header p {
+        font-size: 0.875rem;
+    }
+
+    .header .cta-button {
+        padding: 10px 20px;
+        font-size: 0.875rem;
+    }
+}
+
+        /* Close Button */
+        .close-btn {
+            display: none;
+            font-size: 30px;
+            cursor: pointer;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: black;
+        }
+
+        .nav-links.active .close-btn {
+            display: block;
+        }
+
+
+
+        /* Contact Us Section */
+        .contact-us {
+            padding: 80px 5%;
+            background: linear-gradient(to top, white, rgba(255, 255, 255, 0.9)),
+                        url('assets/57.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #333;
+            position: relative; /* Ensure that the absolute positioning of the pseudo-element is relative to this container */
+        }
+
+
+.contact-us h2 {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: gold; /* Primary color for heading */
+}
+
+        .contact-us .contact-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .contact-form, .contact-info {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-form input, .contact-form textarea {
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .contact-form textarea {
+            height: 150px;
+            resize: none;
+        }
+
+        .contact-form button {
+            padding: 15px;
+            background-color: gold; /* Accent color for the button */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: white;
+        }
+
+        .contact-info {
+            font-size: 1rem;
+            color: black;
+        }
+
+        .contact-info p {
+            margin-bottom: 15px;
+        }
+
+        .contact-info .info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .contact-info .info-item img {
+            margin-right: 15px;
+            width: 40px;
+            height: auto;
+        }
+
+        /* Map Section */
+/* Map Section */
+.map {
+  height: 450px; /* Set a moderate height for the map */
+  margin: 0; /* Remove any margin */
+  padding: 0; /* Remove any padding */
+  overflow: hidden; /* Hide any overflow */
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .contact-container {
+                flex-direction: column;
+            }
+
+            .contact-us h2 {
+                font-size: 2.5em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .contact-us h2 {
+                font-size: 2em;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="Index.html" class="logo">
+            <img src="assets/Logo.png" alt="Rhys Projects Logo">
+        </a>
+        <div class="hamburger" id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="About.html">About Us</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+        <div class="close-btn" id="close-btn">&times;</div>
+    </nav>
+    <!-- Gold Line Below Navbar -->
+    <div class="gold-line"></div>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <h1>Your Vision, Our Expertise</h1>
+            <p>If you're not sure what you're looking for, give us a call today.</p>
+            <a href="#contact" class="cta-button"><i class="fas fa-chevron-right"></i> Call Us</a>
+        </div>
+    </header>
+
+    <!-- Contact Us Section -->
+    <section class="contact-us" id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+            <div class="contact-form">
+                <form id="contactForm" action="https://formspree.io/f/mjkbqoqg" method="POST" onsubmit="return handleSubmit(event)">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+    
+                    <!-- Hidden field for reply-to email -->
+                    <input type="hidden" name="_replyto" value="rhysproects17@gmail.com">
+    
+                    <button type="submit">Send Message</button>
+                </form>
+    
+                <!-- Green success message -->
+                <div id="successMessage" style="display:none; color: white; background-color: green; padding: 10px; margin-top: 10px;">
+                    Thank you! Your message has been sent.
+                </div>
+            </div>
+    
+            <div class="contact-info">
+                <div class="info-item">
+                    <img src="assets/phone.png" alt="Phone Icon">
+                    <p>081 366 6777</p>
+                </div>
+                <div class="info-item">
+                    <img src="assets/email.png" alt="Email Icon">
+                    <p>rhysproects17@gmail.com | nqubekomap@gmail.com</p>
+                </div>
+                <div class="info-item">
+                    <img src="assets/location.png" alt="Location Icon">
+                    <p>2514 MOUNT MORIAH, PHOENIX, DURBAN, 4051</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault(); // Prevent default form submission behavior
+    
+            const form = event.target;
+            const formData = new FormData(form);
+    
+            // Send form data to Formspree
+            fetch(form.action, {
+                method: form.method,
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    // Show success message
+                    document.getElementById('successMessage').style.display = 'block';
+                    form.reset(); // Clear the form
+                } else {
+                    alert('Oops! Something went wrong, please try again.');
+                }
+            })
+            .catch(error => {
+                alert('Oops! There was a problem submitting the form.');
+            });
+    
+            return false; // Prevent the default form submission
+        }
+    </script>
+    
+
+    <!-- Map Section -->
+<section class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3464.3681933314447!2d31.02182817513188!3d-29.738055517135482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef7043722ac716b%3A0x748635cbfe532e6!2s2514%20Mount%20Moriah%20Dr%2C%20Mount%20Moriah%2C%20KwaMashu%2C%204051!5e0!3m2!1sen!2sza!4v1726132885946!5m2!1sen!2sza"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer">
+    <!-- Logo Section -->
+    <div class="logo">
+        <img src="assets/logo.png" alt="Company Logo">
+    </div>
+
+    <div class="contact-us1">
+        <h2>CONTACT US</h2>
+        <div class="contact-details1">
+            <div class="contact-item1">
+                <i class="fas fa-phone"></i>
+                <p>081 366 6777</p>
+            </div>
+            <br>
+            <div class="contact-item1">
+                <i class="fas fa-envelope"></i>
+                <p>rhysproects17@gmail.com | nqubekomap@gmail.com</p>
+            </div>
+            <br>
+            <div class="contact-item1">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>2514 MOUNT MORIAH, PHOENIX, DURBAN, 4051</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Contact Form Section -->
+    <!-- Contact Form Section -->
+<div class="contact-form1">
+    <form id="contactForm" action="https://formspree.io/f/mjkbqoqg" method="POST" onsubmit="return handleSubmit(event)">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Enter your message" rows="4" required></textarea>
+        </div>
+
+        <!-- Hidden field for reply-to email -->
+        <input type="hidden" name="_replyto" value="rhysproects17@gmail.com">
+
+        <button type="submit">Send Message</button>
+    </form>
+
+    <!-- Green alert for success message -->
+    <div id="successMessage" style="display:none; color: white; background-color: green; padding: 10px; margin-top: 10px;">
+        Thank you! Your message has been sent.
+    </div>
+</div>
+
+<script>
+    function handleSubmit(event) {
+        event.preventDefault(); // Prevent default form submission behavior
+        
+        const form = event.target;
+        const formData = new FormData(form);
+
+        // Send form data to Formspree
+        fetch(form.action, {
+            method: form.method,
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        })
+        .then(response => {
+            if (response.ok) {
+                // Show green alert success message
+                document.getElementById('successMessage').style.display = 'block';
+                form.reset(); // Clear the form
+            } else {
+                alert('Oops! Something went wrong, please try again.');
+            }
+        })
+        .catch(error => {
+            alert('Oops! There was a problem submitting the form.');
+        });
+
+        return false; // Prevent the default form submission
+    }
+</script>
+
+    
+    
+
+    
+</footer>
+
+
+
+
+
+
+
+
+    <!-- JavaScript -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+        const closeBtn = document.getElementById('close-btn');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        closeBtn.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+        });
+    </script>
+</body>
+</html>
